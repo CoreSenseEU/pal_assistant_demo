@@ -1,0 +1,15 @@
+/local_costmap:
+  ros__parameters:
+    robot_radius: 0.277
+  use_preset: "local_costmap_w_filters.yaml"
+  use_if:
+    robot_type: tiago
+    base_type: pmb2
+    advanced_navigation: true
+
+/global_costmap:
+  use_preset: "global_costmap_w_filters.yaml"
+  use_if:
+    robot_type: tiago
+    base_type: pmb2
+    advanced_navigation: true

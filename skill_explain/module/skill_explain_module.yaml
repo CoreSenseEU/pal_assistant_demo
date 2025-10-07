@@ -1,0 +1,2 @@
+skill_explain:
+  launch: "skill_explain skill_explain.launch.py"

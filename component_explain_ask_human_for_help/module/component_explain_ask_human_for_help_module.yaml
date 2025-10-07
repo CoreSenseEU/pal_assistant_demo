@@ -1,0 +1,2 @@
+component_explain_ask_human_for_help:
+  launch: "component_explain_ask_human_for_help component_explain_ask_human_for_help.launch.py"

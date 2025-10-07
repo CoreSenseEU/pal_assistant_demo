@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package format="3">
+    <name>skill_ask_human_for_help</name>
+    <version>1.0.0</version>
+    <description>Ask human for help</description>
+
+  <maintainer email="ferran.gebelli@pal-robotics.com">Sara Cooper</maintainer>
+
+  <license>Apache-2.0</license>
+
+  <depend>rclpy</depend>
+  <depend>lifecycle_msgs</depend>
+
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>launch_pal</exec_depend>
+
+  <exec_depend>hri</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf_transformations</exec_depend>
+
+  <exec_depend>interaction_skills</exec_depend>
+  <exec_depend>communication_skills</exec_depend>
+  <exec_depend>navigation_skills</exec_depend>
+  
+  <exec_depend>attention_manager_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>diagnostic_msgs</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+      <build_type>ament_python</build_type>
+      <implements type="skill" package="interaction_skills" id="ask_human_for_help" />
+  </export>
+</package>

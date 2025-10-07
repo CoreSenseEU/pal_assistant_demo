@@ -1,0 +1,2 @@
+component_explain_planner:
+  launch: "component_explain_planner component_explain_planner.launch.py"

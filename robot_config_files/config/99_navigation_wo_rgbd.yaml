@@ -1,0 +1,19 @@
+/global_costmap:
+  use_preset: "global_costmap_mppi_w_filters.yaml"
+  use_if:
+    robot_type: tiago_pro
+    base_type: omni_base
+    advanced_navigation: true
+  ros__parameters:
+    footprint_padding: 0.0
+
+/local_costmap:
+  use_preset: "local_costmap_mppi_w_filters.yaml"
+  use_if:
+    robot_type: tiago_pro
+    base_type: omni_base
+    advanced_navigation: true
+  ros__parameters:
+    footprint: '[[0.28, 0.18], [-0.28, 0.18], [-0.28, -0.18], [0.28, -0.18]]'
+
+

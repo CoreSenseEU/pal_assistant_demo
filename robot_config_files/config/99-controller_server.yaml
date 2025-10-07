@@ -1,0 +1,13 @@
+/controller_server:
+  ros__parameters:
+    controller_frequency: 20.0
+    FollowPath:
+      model_dt: 0.05
+      vx_max: 0.3
+      vx_std: 0.24
+      wz_max: 0.8
+      wz_std: 0.4
+    general_goal_checker:
+      xy_goal_tolerance: 0.3
+      yaw_goal_tolerance: 0.25
+

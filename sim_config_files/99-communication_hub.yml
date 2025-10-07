@@ -1,0 +1,23 @@
+/communication_hub:
+  ros__parameters:
+    enable_default_chatbot: true
+    chatbot_startup_timeout: 60.
+    chatbot_response_timeout: 60.
+    multi_modal_expression_timeout: 20.
+  remappings:
+    chatbot/start_dialogue/_action/feedback: chatbot_ollama/start_dialogue/_action/feedback
+    chatbot/start_dialogue/_action/status: chatbot_ollama/start_dialogue/_action/status
+    chatbot/start_dialogue/_action/send_goal: chatbot_ollama/start_dialogue/_action/send_goal
+    chatbot/start_dialogue/_action/cancel_goal: chatbot_ollama/start_dialogue/_action/cancel_goal
+    chatbot/start_dialogue/_action/get_result: chatbot_ollama/start_dialogue/_action/get_result
+    chatbot/dialogue_interaction: chatbot_ollama/dialogue_interaction
+/chatbot_ollama:
+  ros__parameters:
+    chatbot_timeout: 60.0
+    # server_url: http://pal-springbasestation:11434
+    # model_name: phi4
+    server_url: https://api.openai.com
+    model_name: 'gpt-4.1-mini'
+    api_key: "<insert_your_api_key_here>"
+    temperature: 0.0
+    # templates: /home/pal/.pal/chatbot_ollama_templates

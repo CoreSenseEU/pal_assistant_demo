@@ -1,0 +1,4 @@
+/hri_body_detect:
+  ros__parameters:
+    use_depth: True
+    image_compressed: False

@@ -1,0 +1,31 @@
+/skill_explain:
+  ros__parameters:
+    api_key: "ak-proj-NO6OdcYOM6h_57LLMfWhr5SG8Nlq45KHQdZH0kLIIwPM1IE4otPmt1nsODU-FSfd5SCtKuZ6mHT3BlbkFJDPQ2YaSQmM8rc-92J3_ss5CHOfmGAmGMfV00_TtI7k5x2eLXtkTu-cedCTO4j-xqFihhSCFAMA"
+    llm_host: https://api.openai.com
+    llm_model: 'gpt-4.1-mini'
+    # llm_model: 'phi4'
+    # llm_host: pal-springbasestation:11434
+
+/component_explain_ask_human_for_help:
+  ros__parameters:
+    api_key: "ak-proj-NO6OdcYOM6h_57LLMfWhr5SG8Nlq45KHQdZH0kLIIwPM1IE4otPmt1nsODU-FSfd5SCtKuZ6mHT3BlbkFJDPQ2YaSQmM8rc-92J3_ss5CHOfmGAmGMfV00_TtI7k5x2eLXtkTu-cedCTO4j-xqFihhSCFAMA"
+    llm_host: https://api.openai.com
+    llm_model: 'gpt-4.1-mini'
+    # llm_model: 'phi4'
+    # llm_host: pal-springbasestation:11434
+
+/component_explain_navigation:
+  ros__parameters:
+    api_key: "ak-proj-NO6OdcYOM6h_57LLMfWhr5SG8Nlq45KHQdZH0kLIIwPM1IE4otPmt1nsODU-FSfd5SCtKuZ6mHT3BlbkFJDPQ2YaSQmM8rc-92J3_ss5CHOfmGAmGMfV00_TtI7k5x2eLXtkTu-cedCTO4j-xqFihhSCFAMA"
+    llm_host: https://api.openai.com
+    llm_model: 'gpt-4.1-mini'
+    # llm_model: 'phi4'
+    # llm_host: pal-springbasestation:11434
+
+/component_explain_planner:
+  ros__parameters:
+    api_key: "ak-proj-NO6OdcYOM6h_57LLMfWhr5SG8Nlq45KHQdZH0kLIIwPM1IE4otPmt1nsODU-FSfd5SCtKuZ6mHT3BlbkFJDPQ2YaSQmM8rc-92J3_ss5CHOfmGAmGMfV00_TtI7k5x2eLXtkTu-cedCTO4j-xqFihhSCFAMA"
+    llm_host: https://api.openai.com
+    llm_model: 'gpt-4.1-mini'
+    # llm_model: 'phi4'
+    # llm_host: pal-springbasestation:11434

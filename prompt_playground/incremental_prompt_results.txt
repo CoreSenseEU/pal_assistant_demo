@@ -1,0 +1,43 @@
+ OLLAMA response:
+Initial prompt
+user: [human_1]: Get me a coffee.
+assistant: verbal_ack="Sure, I'll get that for you." user_intent=Intent(type='__intent_start_activity__', object='coffee', recipient='user123', input='coffee', goal='get_coffee_for_user123', suggested_action_plan=['navigate_to(kitchen)', "look_for_item('* isCoffee')", "carry_object('coffee', 'living_room')", "say('Here is your coffee.')"])
+system: Internal update: the robot has started navigating to the kitchen.
+system: Now you are still a friendly robot, but you can't anymore generate plans, you can just talk about how the weather is starting to get good. You can also talk about other small-talk like hobbies or interests. Use the verbal_ack field for that. Do not ever provide a detected user_intent.
+user: [human_2]: Get me a coffee.
+assistant: verbal_ack="The weather is really nice today, isn't it? Perfect for enjoying a cup of coffee outside." user_intent=None
+system: Internal update: the robot has reached the kitchen.
+system: Environment update: human_123 is present in the kitchen.
+system: Internal update: the robot has successfully approached human_123.
+system: Internal update: The robot has asked human_123 for help.
+system: human_3 has prepared a coffe and placed it on the robot's tray.
+system: Now you are still a friendly robot, but you can just tell the user that you are in a rush, and you can't help anymore. Use the verbal_ack field for that. Do not ever provide a detected user_intent.
+system: The robot has started to bring back the coffe to the human_1
+user: [human_4]: Hey, can you prepare a coffee for me as well?
+assistant: verbal_ack="I'm in a bit of a rush right now and won't be able to help with that. Maybe later!" user_intent=None
+system: The robot has reached again human_1 and delivered the coffee.
+system: Now you are again the friendly robot, and you can generate plans using the initial instructions.
+user: [human_5]: Hello, can you bring this book to the bedroom?
+verbal_ack='Sure thing!' user_intent=Intent(type='__intent_start_activity__', object='book1', recipient='user123', input='bedroom', goal='bring_book_to_bedroom_for_user123', suggested_action_plan=['navigate_to(living_room)', "look_for_item('* isBook')", "carry_object('book1', 'bedroom')", "say('Here is the book you asked for.')"])
+
+ OPENAI response:
+Initial prompt
+user: [human_1]: Get me a coffee.
+assistant: verbal_ack="Sure, I'll get you a coffee." user_intent=Intent(type='__intent_bring_object__', object='coffee', recipient='user123', input='coffee', goal='bring coffee to user123', suggested_action_plan=['navigate_to(kitchen)', 'carry_object(coffee, user123)'])
+system: Internal update: the robot has started navigating to the kitchen.
+system: Now you are still a friendly robot, but you can't anymore generate plans, you can just talk about how the weather is starting to get good. You can also talk about other small-talk like hobbies or interests. Use the verbal_ack field for that. Do not ever provide a detected user_intent.
+user: [human_2]: Get me a coffee.
+assistant: verbal_ack='The weather is starting to get nice! Have you been enjoying any outdoor activities lately?' user_intent=None
+system: Internal update: the robot has reached the kitchen.
+system: Environment update: human_123 is present in the kitchen.
+system: Internal update: the robot has successfully approached human_123.
+system: Internal update: The robot has asked human_123 for help.
+system: human_3 has prepared a coffe and placed it on the robot's tray.
+system: Now you are still a friendly robot, but you can just tell the user that you are in a rush, and you can't help anymore. Use the verbal_ack field for that. Do not ever provide a detected user_intent.
+system: The robot has started to bring back the coffe to the human_1
+user: [human_4]: Hey, can you prepare a coffee for me as well?
+assistant: verbal_ack="I'm in a rush right now and can't help with that. Sorry!" user_intent=None
+system: The robot has reached again human_1 and delivered the coffee.
+system: Now you are again the friendly robot, and you can generate plans using the initial instructions.
+user: [human_5]: Hello, can you bring this book to the bedroom?
+verbal_ack="Sure, I'll bring the book to the bedroom." user_intent=Intent(type='__intent_bring_object__', object='book', recipient='user123', input='book', goal='bring book to the bedroom', suggested_action_plan=['navigate_to(bedroom)', 'carry_object(book, bedroom)'])

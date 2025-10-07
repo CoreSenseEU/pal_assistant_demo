@@ -1,0 +1,6 @@
+/yolo_ros_onnx:
+  remappings:
+    /image: "/head_front_camera/color/image_raw"
+    /camera_info: "head_front_camera/color/camera_info"
+  ros__parameters:
+    image_transport: "raw"

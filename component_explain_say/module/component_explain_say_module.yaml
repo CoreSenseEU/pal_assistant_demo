@@ -1,0 +1,2 @@
+component_explain_say:
+  launch: "component_explain_say component_explain_say.launch.py"

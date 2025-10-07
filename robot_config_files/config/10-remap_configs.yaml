@@ -1,0 +1,11 @@
+/remap_manager:
+  ros__parameters:
+    plugin/robot/gaze_frame: head_front_camera_color_optical_frame
+    plugin/robot/presence_frame: torso_fixed_column_link
+    plugin/robot/robot_name: myself
+    plugin/nav_map/navigation_map_path: /home/pal/llm_demo/environment.yaml
+    plugin/nav_map/navigation_map: "llm_demo"
+  remappings:
+    /camera_info: /head_front_camera/color/camera_info
+    /depth_registered/camera_info: /head_front_camera/aligned_depth_to_color/camera_info
+    /depth_registered/image_rect: /head_front_camera/aligned_depth_to_color/image_raw

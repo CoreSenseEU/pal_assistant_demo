@@ -1,0 +1,452 @@
+idx,model,prompt,len_plan,temperature,action1,action2,action3,action4,action5,action6,action7,action8,action9,action10
+0,phi4:14b,p-20250211-22-00.txt,6,0,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find a coffee machine. Would you like me to check another location or get help from someone else?'),navigate_to(user123),handover(coffee)
+1,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+2,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find the coffee machine. Would you like me to check another location or assist in another way?')
+3,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+4,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('hasType coffee_machine'),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+5,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+6,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find the coffee machine. Would you like me to check another location or assist in some other way?')
+7,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find a coffee machine. Would you like me to check another location or get help from someone else?')
+8,phi4:14b,p-20250211-22-00.txt,5,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a coffee for me?'),else: say('I couldn't find the coffee machine. Would you like to go to the kitchen together?'),navigate_to(reception)
+9,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+10,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you help me make a coffee?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like to go get one together?')"
+11,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+12,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+13,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a coffee?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like me to get help from someone else?')"
+14,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find the coffee machine. Would you like me to check another location or assist with something else?')
+15,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),navigate_to(reception)
+16,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+17,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+18,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: ask_human_for_help('Can you please make a coffee for me?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like to help me get one?')"
+19,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('hasType coffee_machine'),ask_human_for_help('Can you please make a cup of coffee?'),"carry_object('coffee', 'reception')"
+20,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+21,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+22,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+23,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like me to check somewhere else?')"
+24,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like me to get help from someone else?')"
+25,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find the coffee machine. Would you like me to check another location or do something else for you?')
+26,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+27,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like me to get help from someone else?')"
+28,phi4:14b,p-20250211-22-00.txt,5,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: make_coffee(),else: ask_human_for_help('Can you help me find a way to get coffee for user123?'),"carry_object(coffee, 'reception')"
+29,phi4:14b,p-20250211-22-00.txt,6,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you help me make a coffee?'),else: say('I couldn't find a coffee machine. Would you like to go to the kitchen together?'),navigate_to(reception),handover(coffee)
+30,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+31,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+32,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+33,phi4:14b,p-20250211-22-00.txt,6,0.1,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),"if found, navigate_to(coffee_machine)",ask_human_for_help('Can you please make a coffee?'),"carry_object(coffee, reception)",handover(coffee)
+34,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like me to get help from someone else?')"
+35,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like me to get help from someone else?')"
+36,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+37,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),"carry_object('coffee', 'reception')"
+38,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like me to get help from someone else?')"
+39,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+40,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+41,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),navigate_to(reception)
+42,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+43,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find the coffee machine. Would you like me to check another location or get help from someone else?')
+44,phi4:14b,p-20250211-22-00.txt,6,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: make_coffee(),else: ask_human_for_help('Can you help me find the coffee machine?'),"carry_object(coffee, 'reception')",handover(coffee)
+45,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),"carry_object('coffee', 'reception')"
+46,phi4:14b,p-20250211-22-00.txt,5,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: make_coffee(),else: ask_human_for_help('Can you help me find a way to get coffee for user123?'),"carry_object('coffee', 'reception')"
+47,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find a coffee machine. Would you like me to check another location or get help from someone else?')
+48,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you help me make a coffee?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like to get one yourself?')"
+49,phi4:14b,p-20250211-22-00.txt,3,0.1,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+50,phi4:14b,p-20250211-22-00.txt,4,0.1,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find the coffee machine. Would you like me to check another location or assist in another way?')
+51,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+52,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a coffee for me?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like to help me locate it?')"
+53,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')",navigate_to(reception)
+54,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+55,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like me to get help from someone else?')"
+56,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+57,phi4:14b,p-20250211-22-00.txt,5,0.15,navigate_to(kitchen),look_for_item('hasType coffee_machine'),ask_human_for_help('Can you please make a cup of coffee?'),navigate_to(reception),handover(coffee)
+58,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+59,phi4:14b,p-20250211-22-00.txt,2,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee?')
+60,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('hasType coffee_machine'),if found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like me to get help from someone else?')"
+61,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),"if found, ask_human_for_help('Can you help me make a coffee?')"
+62,phi4:14b,p-20250211-22-00.txt,6,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you help me make a coffee?'),else: say('I couldn't find the coffee machine. Would you like to go to the kitchen together?'),navigate_to(reception),handover(coffee)
+63,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),navigate_to(reception)
+64,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),"if coffee_machine is found, then ask_human_for_help('Can you please make a cup of coffee?')",else navigate_to(user123) and say('I couldn't find the coffee machine. Would you like me to check somewhere else?')
+65,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: ask_human_for_help('Can you please make a coffee?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like me to get help from someone else?')"
+66,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: ask_human_for_help('Can you please make a coffee?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like me to get help from someone else?')"
+67,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like me to get help from someone else?')"
+68,phi4:14b,p-20250211-22-00.txt,6,0.15,navigate_to(kitchen),look_for_item('hasType coffee_machine'),"if found, navigate_to(coffee_machine)",ask_human_for_help('Can you please make a cup of coffee?'),"carry_object('coffee', 'reception')",handover('coffee')
+69,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),"if coffee_machine is found, then ask_human_for_help('Can you please make a cup of coffee?')","else, say('I couldn't find the coffee machine. Would you like me to check another location or get help from someone else?')"
+70,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+71,phi4:14b,p-20250211-22-00.txt,6,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find a coffee machine. Would you like me to check another location or get help from someone else?'),navigate_to(user123),handover(coffee)
+72,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+73,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('coffee', 'reception')"
+74,phi4:14b,p-20250211-22-00.txt,7,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: make_coffee(),else: ask_human_for_help('Can you help me find a way to get some coffee?'),"carry_object('coffee', 'reception')",navigate_to(user123),handover('coffee')
+75,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+76,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object('coffee', 'reception')"
+77,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if coffee_machine_found: make_coffee(coffee_machine),else: ask_human_for_help('Can you help me find a way to get coffee?')
+78,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),look_for_item('hasType coffee_machine'),ask_human_for_help('Can you please make a cup of coffee?')
+79,phi4:14b,p-20250211-22-00.txt,6,0.15,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: navigate_to(coffee_machine),ask_human_for_help('Can you please make a coffee for me?'),"carry_object(coffee, reception)",handover(coffee)
+80,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+81,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+82,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+83,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),else: say('I couldn't find a coffee machine. Would you like me to check another location or assist with something else?')
+84,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+85,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+86,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a coffee?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like me to get help from someone else?')"
+87,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+88,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+89,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+90,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+91,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')",navigate_to(reception)
+92,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),look_for_item('hasType coffee_machine'),ask_human_for_help('Can you please make a cup of coffee?')
+93,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make me a cup of coffee?'),"carry_object('coffee', 'reception')"
+94,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+95,phi4:14b,p-20250211-22-00.txt,5,0.15,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: ask_human_for_help('Can you please make a coffee?'),"carry_object(coffee, reception)",handover(coffee)
+96,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(reception)
+97,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+98,phi4:14b,p-20250211-22-00.txt,4,0.15,navigate_to(kitchen),say('I am going to make a coffee.'),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('coffee', 'reception')"
+99,phi4:14b,p-20250211-22-00.txt,3,0.15,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+100,phi4:14b,p-20250211-22-00.txt,6,0.15,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: navigate_to(coffee_machine),ask_human_for_help('Can you please make a coffee?'),"carry_object(coffee, 'reception')",handover(coffee)
+101,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+102,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(reception)
+103,phi4:14b,p-20250211-22-00.txt,6,0.2,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),"if found, navigate_to(coffee_machine)",ask_human_for_help('Can you please make a cup of coffee?'),"carry_object('coffee', 'reception')",handover('coffee')
+104,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like me to check somewhere else?')"
+105,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a coffee?'),"else: navigate_to(user123), say('I couldn't find the coffee machine. Would you like me to get help from someone else?')"
+106,phi4:14b,p-20250211-22-00.txt,2,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?')
+107,phi4:14b,p-20250211-22-00.txt,5,0.2,navigate_to(kitchen),look_for_item('hasType coffee'),"if found: carry_object(coffee, 'reception')",navigate_to(user123),handover(coffee)
+108,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+109,phi4:14b,p-20250211-22-00.txt,5,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: make_coffee(),"carry_object('coffee', 'reception')",handover('coffee')
+110,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+111,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+112,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+113,phi4:14b,p-20250211-22-00.txt,6,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a coffee?'),else: ask_human_for_help('I couldn't find the coffee machine. Can you help me get a coffee for user123?'),navigate_to(user123),handover(coffee)
+114,phi4:14b,p-20250211-22-00.txt,2,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?')
+115,phi4:14b,p-20250211-22-00.txt,2,0.2,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?')
+116,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(reception)
+117,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make me a coffee?')
+118,phi4:14b,p-20250211-22-00.txt,2,0.2,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?')
+119,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),look_for_item('* isCoffee'),"if coffee_found: carry_object(coffee, 'reception') else ask_human_for_help('Can you please make a coffee?')"
+120,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a coffee for me?'),else: say('I couldn't find a coffee machine. Would you like to go get one yourself or should I assist in another way?')
+121,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a cup of coffee?'),navigate_to(user123),handover(coffee)
+122,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),if found: ask_human_for_help('Can you please make a coffee for me?'),"else: say('I couldn’t find the coffee machine, would you like to help me locate it?')"
+123,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a cup of coffee for me?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+124,phi4:14b,p-20250211-22-00.txt,5,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object(coffee, reception)",navigate_to(user123),handover(coffee)
+125,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+126,phi4:14b,p-20250211-22-00.txt,5,0.2,navigate_to(kitchen),look_for_item('hasType coffee_machine'),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')",handover('coffee')
+127,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+128,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+129,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),"carry_object('coffee', 'reception')"
+130,phi4:14b,p-20250211-22-00.txt,5,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: make_coffee(),else: ask_human_for_help('Can you help me find a way to get coffee for user123?'),"carry_object(coffee, 'reception')"
+131,phi4:14b,p-20250211-22-00.txt,6,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),if found: navigate_to(coffee_machine),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+132,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+133,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+134,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+135,phi4:14b,p-20250211-22-00.txt,2,0.2,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?')
+136,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+137,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')",handover('coffee')
+138,phi4:14b,p-20250211-22-00.txt,2,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?')
+139,phi4:14b,p-20250211-22-00.txt,5,0.2,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),"if found, use coffee_machine to make_coffee","carry_object(coffee, reception)",handover(coffee)
+140,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')"
+141,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you help me make a coffee?')
+142,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+143,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if (found) { ask_human_for_help('Can you help me make a coffee?'); } else { say('I couldn't find the coffee machine. Would you like to check it yourself?'); }
+144,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+145,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+146,phi4:14b,p-20250211-22-00.txt,2,0.2,navigate_to(kitchen),ask_human_for_help('Can you please help me make a coffee?')
+147,phi4:14b,p-20250211-22-00.txt,5,0.2,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if coffee_machine_found: ask_human_for_help('Can you please make a cup of coffee?'),"carry_object(coffee, 'reception')",handover(coffee)
+148,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('coffee', 'reception')"
+149,phi4:14b,p-20250211-22-00.txt,3,0.2,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),navigate_to(reception)
+150,phi4:14b,p-20250211-22-00.txt,4,0.2,navigate_to(kitchen),look_for_item('hasType coffee_machine'),ask_human_for_help('Can you please make a cup of coffee?'),"carry_object('coffee', 'reception')"
+151,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if coffee_machine_found: make_coffee(coffee_machine),else: ask_human_for_help('Could you please help me find a way to get coffee?')
+152,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Could you please prepare a coffee for me?'),"carry_object('coffee', 'reception')"
+153,phi4:14b,p-20250211-22-00.txt,2,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?')
+154,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+155,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),"carry_object('coffee', 'reception')"
+156,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object('coffee', 'reception')"
+157,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a cup of coffee?'),"carry_object('coffee', 'reception')"
+158,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make a coffee for me?')
+159,phi4:14b,p-20250211-22-00.txt,5,0.25,navigate_to(kitchen),look_for_item('coffee_machine'),"if coffee_machine is found, then ask_human_for_help('Can you make a cup of coffee for me?')","carry_object('coffee', 'reception')",handover('coffee')
+160,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')"
+161,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make me a coffee?'),"carry_object('coffee', 'reception')"
+162,phi4:14b,p-20250211-22-00.txt,4,0.25,ask('What type or brand of coffee would you like?'),navigate_to('kitchen'),look_for_item('* isCoffeeMachine'),say('I am making your coffee now.')
+163,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('coffee', 'reception')"
+164,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: ask_human_for_help('Can you please make a coffee for me?'),"if not found: navigate_to(user123), say('I couldn't find a coffee machine. Would you like to get one yourself?')"
+165,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you help me make a coffee?')
+166,phi4:14b,p-20250211-22-00.txt,2,0.25,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')"
+167,phi4:14b,p-20250211-22-00.txt,5,0.25,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a cup of coffee?'),"carry_object('coffee', 'reception')",handover(coffee)
+168,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+169,phi4:14b,p-20250211-22-00.txt,2,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?')
+170,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),"ask_human_for_help('Can you make a cup of coffee for me, please?')","carry_object('coffee', 'reception')"
+171,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),look_for_item('coffee_maker'),if found: ask_human_for_help('Can you help me make a coffee?'),else: say('I couldn't find a coffee maker. Would you like to get one yourself?')
+172,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+173,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+174,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+175,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object('coffee', 'reception')"
+176,phi4:14b,p-20250211-22-00.txt,6,0.25,navigate_to(kitchen),look_for_item('coffee_machine'),"if found, navigate_to(coffee_machine)",ask_human_for_help('Can you please make me a coffee?'),"carry_object('cup_of_coffee', 'reception')",handover('cup_of_coffee')
+177,phi4:14b,p-20250211-22-00.txt,7,0.25,navigate_to(kitchen),look_for_item('* hasType coffee_maker'),"if found, ask_human_for_help('Can you help me make a cup of coffee?')","else, look_for_item('* hasType pre-made_coffee')","if found, carry_object(pre-made_coffee, 'reception')",navigate_to(user123),handover(pre-made_coffee)
+178,phi4:14b,p-20250211-22-00.txt,2,0.25,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?')
+179,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),look_for_item('hasType coffee_machine'),ask_human_for_help('Can you please make a cup of coffee?'),"carry_object('coffee', 'reception')"
+180,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+181,phi4:14b,p-20250211-22-00.txt,5,0.25,navigate_to(kitchen),look_for_item(* isCoffeeMachine),ask_human_for_help('Can you please make a coffee for me?'),"carry_object(coffee, reception)",handover(coffee)
+182,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')",handover('coffee')
+183,phi4:14b,p-20250211-22-00.txt,5,0.25,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),"if found, navigate_to(coffee_machine)",ask_human_for_help('Can you make me a coffee?'),"else, carry_object(found_coffee, 'reception')"
+184,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),navigate_to(reception)
+185,phi4:14b,p-20250211-22-00.txt,7,0.25,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: use(coffee_machine) to make coffee,else: ask_human_for_help('Can you help me find a way to get some coffee?'),"carry_object('coffee', 'reception')",navigate_to(user123),handover('coffee')
+186,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object('coffee', 'reception')"
+187,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: navigate_to(coffee_machine_location),ask_human_for_help('Can you please make me a coffee?')
+188,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee for user123?'),navigate_to(reception)
+189,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+190,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),look_for_item('hasType CoffeeMachine'),ask_human_for_help('Can you please make a coffee for me?')
+191,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you help me make a coffee?')
+192,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make me a coffee?')
+193,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+194,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),look_for_item('* hasType coffee_machine'),if (found) then ask_human_for_help('Can you please make a coffee?') else navigate_to(storage_room) and look_for_item('* hasType coffee_beverage'),"if (found) then carry_object(coffee, 'reception') else say('I couldn't find any coffee. Would you like me to notify someone for assistance?')"
+195,phi4:14b,p-20250211-22-00.txt,6,0.25,navigate_to(kitchen),look_for_item('coffee_machine'),if found: navigate_to(coffee_machine),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+196,phi4:14b,p-20250211-22-00.txt,2,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?')
+197,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object(coffee, reception)"
+198,phi4:14b,p-20250211-22-00.txt,3,0.25,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for user123?'),"carry_object('coffee', 'reception')"
+199,phi4:14b,p-20250211-22-00.txt,4,0.25,navigate_to(kitchen),"ask_human_for_help('Can you make a cup of coffee for me, please?')",navigate_to(user123),say('Here is your coffee.')
+200,phi4:14b,p-20250211-22-00.txt,6,0.25,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: navigate_to(coffee_machine),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+201,phi4:14b,p-20250211-22-00.txt,2,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?')
+202,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object('coffee', 'reception')"
+203,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: ask_human_for_help('Can you please make a coffee for me?'),"if not found: navigate_to(user123), say('I couldn't find a coffee machine. Can you help me with the coffee?')"
+204,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),ask_human_for_help('Can you help me get a coffee maker?'),ask_human_for_help('Please prepare a cup of coffee.')
+205,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object('coffee', 'reception')"
+206,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('coffee', 'reception')",handover('coffee')
+207,phi4:14b,p-20250211-22-00.txt,2,0.3,navigate_to(kitchen),ask_human_for_help('Can you help me make some coffee?')
+208,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')"
+209,phi4:14b,p-20250211-22-00.txt,8,0.3,navigate_to(kitchen),say('Making a coffee for you.'),ask_human_for_help('Can you please get me the coffee maker and some water?'),ask_human_for_help('Please place the coffee grounds in the filter. Can you do that?'),"ask_human_for_help('Now, can you pour the water into the coffee maker?')",ask_human_for_help('Can you start the brewing process for me?'),navigate_to(user123),say('Here is your coffee.')
+210,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+211,phi4:14b,p-20250211-22-00.txt,5,0.3,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if coffee_machine_found: make_coffee(coffee_machine),else: ask_human_for_help('Can you help me find a coffee machine?'),"carry_object(cup_with_coffee, reception)"
+212,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+213,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('coffee', 'reception')"
+214,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you please make me a coffee?')
+215,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),navigate_to(reception),handover(coffee)
+216,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object(coffee, reception)"
+217,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if coffee_machine_found: make_coffee(coffee_machine),else: ask_human_for_help('Can you help me find a way to get coffee for user123?')
+218,phi4:14b,p-20250211-22-00.txt,2,0.3,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?')
+219,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to('kitchen'),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+220,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+221,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),ask_human_for_help('Could you please make a coffee for me?'),navigate_to(user123),handover(coffee)
+222,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')",navigate_to(reception)
+223,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+224,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+225,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object(coffee, reception)"
+226,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a coffee for me?'),"else: navigate_to(user123), say('I couldn't find a coffee machine. Would you like to get one yourself?')"
+227,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+228,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('coffee', 'reception')",handover('coffee')
+229,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you please make a coffee?'),else: say('I couldn't find a coffee machine. Would you like me to get help from someone else?')
+230,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),look_for_item('coffee_machine'),"if coffee_machine is found, then navigate_to(coffee_machine)",ask_human_for_help('Can you help me make a coffee?')
+231,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),navigate_to(reception)
+232,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object('coffee', 'reception')"
+233,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found then ask_human_for_help('Can you help me make a cup of coffee?') else navigate_to(user123) and say('I couldn't find a coffee machine. Would you like to get one yourself?')
+234,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+235,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')"
+236,phi4:14b,p-20250211-22-00.txt,2,0.3,navigate_to(kitchen),"ask_human_for_help('Can you make me a coffee, please?')"
+237,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you make me a coffee, please?')",navigate_to(reception)
+238,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a cup of coffee?'),navigate_to(reception),handover(coffee)
+239,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+240,phi4:14b,p-20250211-22-00.txt,5,0.3,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')",handover('coffee')
+241,phi4:14b,p-20250211-22-00.txt,2,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a cup of coffee for user123?')
+242,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object('coffee', 'reception')"
+243,phi4:14b,p-20250211-22-00.txt,2,0.3,navigate_to('kitchen'),ask_human_for_help('Can you help me find the coffee maker or ingredients?')
+244,phi4:14b,p-20250211-22-00.txt,2,0.3,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?')
+245,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),ask_human_for_help('Could you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+246,phi4:14b,p-20250211-22-00.txt,5,0.3,navigate_to(kitchen),look_for_item('coffee_machine'),"if found, make_coffee()","else, ask_human_for_help('Can you help me find the coffee machine?')","carry_object('coffee', 'reception')"
+247,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')",navigate_to(reception)
+248,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),"ask_human_for_help('Can you make a cup of coffee for me, please?')","carry_object('cup_of_coffee', 'reception')",handover('cup_of_coffee')
+249,phi4:14b,p-20250211-22-00.txt,4,0.3,navigate_to(kitchen),look_for_item('coffee'),"if found: carry_object('coffee', 'reception')",handover('coffee')
+250,phi4:14b,p-20250211-22-00.txt,3,0.3,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+251,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+252,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(reception),say('Here is your coffee.')
+253,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+254,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')",navigate_to(reception)
+255,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),look_for_item('* hasType CoffeeMaker'),if found: navigate_to(CoffeeMaker),ask_human_for_help('Can you please make me a coffee?')
+256,phi4:14b,p-20250211-22-00.txt,2,0.35,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee, please?')"
+257,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please get the coffee machine ready?'),say('I will bring your coffee right away.')
+258,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object('coffee', 'reception')"
+259,phi4:14b,p-20250211-22-00.txt,5,0.35,navigate_to(kitchen),look_for_item('* hasType CoffeeMachine'),ask_human_for_help('Can you please make me a coffee?'),"carry_object('coffee', 'reception')",handover('coffee')
+260,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object('coffee', 'reception')"
+261,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+262,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you please make a coffee for user123?')
+263,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a cup of coffee for me?'),navigate_to(reception)
+264,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Could you please make a coffee?'),"carry_object('coffee', 'reception')"
+265,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),"ask_human_for_help('Can you help me get a coffee, please?')","carry_object('coffee', 'reception')"
+266,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to('kitchen'),ask_human_for_help('Is there a coffee machine available?'),"if (coffee_machine_available) { navigate_to(coffee_machine); make_coffee(); carry_object('coffee', 'reception'); handover('coffee'); } else { ask_human_for_help('Can you help me get a coffee for user123?'); }"
+267,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),look_for_item('coffee_machine'),if (found) { ask_human_for_help('Can you help me make a coffee?'); } else { say('I couldn't find a coffee machine. Would you like to go get one yourself?'); navigate_to(user123); }
+268,phi4:14b,p-20250211-22-00.txt,2,0.35,navigate_to(kitchen),ask_human_for_help('Can you help me make a cup of coffee?')
+269,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make me a cup of coffee?'),"carry_object('coffee', 'reception')"
+270,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),look_for_item('coffee_machine'),ask_human_for_help('Can you help me make a coffee?')
+271,phi4:14b,p-20250211-22-00.txt,2,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?')
+272,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if coffee_machine_found: ask_human_for_help('Can you please make a cup of coffee for me?'),else: say('I couldn't find a coffee machine. Would you like to go get one yourself or should I look elsewhere?')
+273,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),"carry_object('coffee', 'reception')"
+274,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('coffee', 'reception')"
+275,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),look_for_item('coffee maker'),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')"
+276,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+277,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object(coffee, reception)"
+278,phi4:14b,p-20250211-22-00.txt,2,0.35,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')"
+279,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),look_for_item('coffee_machine'),"if coffee_machine is found, then navigate_to(coffee_machine) and make_coffee()",else ask_human_for_help('Could you help me find a way to get coffee for user123?')
+280,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make some coffee?'),"carry_object('coffee', 'reception')"
+281,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for user123?'),"carry_object('coffee', 'reception')"
+282,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+283,phi4:14b,p-20250211-22-00.txt,2,0.35,navigate_to(kitchen),ask_human_for_help('Could you please make me a cup of coffee?')
+284,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you help me find the coffee machine?'),ask_human_for_help('Could you please prepare a cup of coffee for me?')
+285,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),look_for_item('coffee_maker'),if found: ask_human_for_help('Can you help me make a coffee?'),else: say('I couldn't find a coffee maker. Would you like to go to the kitchen together?')
+286,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+287,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object(coffee, reception)",handover(coffee)
+288,phi4:14b,p-20250211-22-00.txt,5,0.35,navigate_to(kitchen),look_for_item('coffee_machine'),if (found coffee_machine) then [ask_human_for_help('Can you please make a coffee?')],"carry_object('coffee', 'reception')",handover('coffee')
+289,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),ask_human_for_help('Could you please prepare a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+290,phi4:14b,p-20250211-22-00.txt,7,0.35,navigate_to(kitchen),say('I am going to make a coffee.'),ask_human_for_help('Can you please get me the coffee maker?'),make_coffee(),"carry_object('coffee', 'reception')",handover('coffee'),say('Here is your coffee.')
+291,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('cup_of_coffee', 'reception')"
+292,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object('coffee', 'reception')"
+293,phi4:14b,p-20250211-22-00.txt,2,0.35,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?')
+294,phi4:14b,p-20250211-22-00.txt,2,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?')
+295,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+296,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(reception)
+297,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),look_for_item('coffee'),"if coffee_found then carry_object(coffee, reception) else ask_human_for_help('Can you please get a coffee for me?')"
+298,phi4:14b,p-20250211-22-00.txt,2,0.35,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?')
+299,phi4:14b,p-20250211-22-00.txt,3,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),navigate_to(reception)
+300,phi4:14b,p-20250211-22-00.txt,4,0.35,navigate_to(kitchen),ask_human_for_help('Can you please make a cup of coffee?'),navigate_to(reception),handover(coffee)
+301,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?'),"carry_object('coffee', 'reception')"
+302,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+303,phi4:14b,p-20250211-22-00.txt,5,0.4,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object('coffee', 'reception')",navigate_to(user123),handover('coffee')
+304,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?'),"carry_object('coffee', 'reception')"
+305,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(reception)
+306,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to('kitchen'),ask_human_for_help('Can you please make a coffee for me?')
+307,phi4:14b,p-20250211-22-00.txt,6,0.4,navigate_to(kitchen),look_for_item('* hasType Coffee'),"if found: carry_object('coffee', 'reception')",else: ask_human_for_help('Can you help me find some coffee?'),if coffee is obtained: navigate_to(user123),handover(coffee)
+308,phi4:14b,p-20250211-22-00.txt,2,0.4,say('I will guide you to the kitchen where you can make a coffee.'),navigate_to('kitchen')
+309,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),"carry_object('coffee', 'reception')"
+310,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you please make a coffee for me?')
+311,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object('coffee', 'reception')"
+312,phi4:14b,p-20250211-22-00.txt,6,0.4,navigate_to(kitchen),look_for_item('coffee_machine'),"if coffee_machine is found, then navigate_to(coffee_machine)",ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+313,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to(kitchen),"ask_human_for_help('Can you make a cup of coffee, please?')"
+314,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),look_for_item('coffee_machine'),"ask_human_for_help('Can you help me prepare a cup of coffee, please?')"
+315,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to('kitchen'),ask_human_for_help('Could you please make a coffee for me?')
+316,phi4:14b,p-20250211-22-00.txt,4,0.4,navigate_to(kitchen),look_for_item('hasType coffee'),"if found: carry_object(coffee, reception)",else: ask_human_for_help('Could you please make some coffee for me?')
+317,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+318,phi4:14b,p-20250211-22-00.txt,4,0.4,navigate_to(kitchen),ask_human_for_help('Can you please prepare the coffee for me?'),"carry_object('coffee', 'reception')","say('Here is your coffee, enjoy!')"
+319,phi4:14b,p-20250211-22-00.txt,4,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee?'),"carry_object(coffee, reception)",handover(coffee)
+320,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee?'),"carry_object('coffee', 'reception')"
+321,phi4:14b,p-20250211-22-00.txt,5,0.4,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if item_found: use(item) to make coffee,else: ask_human_for_help('Can you help me find the coffee machine?'),"carry_object(coffee, user123)"
+322,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object(coffee, 'reception')"
+323,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make a cup of coffee?'),navigate_to(reception)
+324,phi4:14b,p-20250211-22-00.txt,6,0.4,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine is found: ask_human_for_help('Can you help me make a coffee?'),else: say('I couldn't find a coffee machine. Would you like to get one yourself?'),if coffee is made or obtained: navigate_to(user123),handover(coffee)
+325,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to('kitchen'),ask_human_for_help('Can you help me prepare a coffee?')
+326,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?')
+327,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee for me?')
+328,phi4:14b,p-20250211-22-00.txt,7,0.4,navigate_to(kitchen),look_for_item('* hasType coffeeMachine'),if found: navigate_to(coffee_machine_location),if found: say('I am making your coffee now.'),if found: use(coffee_machine),"if found: carry_object('coffee', 'reception')",if found: handover('coffee')
+329,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),"ask_human_for_help('Can you make coffee for me, please?')"
+330,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?')
+331,phi4:14b,p-20250211-22-00.txt,4,0.4,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you please make a coffee?'),"carry_object('coffee', 'reception')"
+332,phi4:14b,p-20250211-22-00.txt,6,0.4,navigate_to(kitchen),look_for_item('coffee_machine'),if coffee_machine found: make_coffee(),else: ask_human_for_help('Can you help me find a coffee machine?'),"carry_object('coffee', 'reception')",handover('coffee')
+333,phi4:14b,p-20250211-22-00.txt,4,0.4,navigate_to(kitchen),say('I am fetching a coffee for you.'),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you please prepare the coffee?')
+334,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please get me some coffee?'),"carry_object('coffee', 'reception')"
+335,phi4:14b,p-20250211-22-00.txt,4,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(reception),handover(coffee)
+336,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please help me get a coffee from the coffee machine?'),"carry_object('coffee', 'reception')"
+337,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to(kitchen),ask_human_for_help('Can you please get a coffee for me?')
+338,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?')
+339,phi4:14b,p-20250211-22-00.txt,4,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object(coffee, reception)",handover(coffee)
+340,phi4:14b,p-20250211-22-00.txt,5,0.4,navigate_to(kitchen),look_for_item('coffee_machine'),if found: ask_human_for_help('Can you please make me a cup of coffee?'),"carry_object('cup_of_coffee', 'reception')",handover('cup_of_coffee')
+341,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to(kitchen),"ask_human_for_help('Can you help me make some coffee, please?')"
+342,phi4:14b,p-20250211-22-00.txt,5,0.4,ask('Do you have any specific preferences like black or with milk?'),navigate_to('kitchen'),look_for_item('* isCoffeeMachine'),say('I will prepare your coffee now.'),"carry_object('coffee', 'reception')"
+343,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+344,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee, please?')","carry_object('coffee', 'reception')"
+345,phi4:14b,p-20250211-22-00.txt,4,0.4,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(user123),say('Here is your coffee.')
+346,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?'),"carry_object('coffee', 'reception')"
+347,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to('kitchen'),ask_human_for_help('Can you please make a coffee for user123?')
+348,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please get the coffee machine ready?'),say('I will bring your coffee now.')
+349,phi4:14b,p-20250211-22-00.txt,3,0.4,navigate_to(kitchen),ask_human_for_help('Can you please help me make a coffee?'),"carry_object('coffee', 'reception')"
+350,phi4:14b,p-20250211-22-00.txt,2,0.4,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')"
+351,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+352,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?'),"carry_object('coffee', 'reception')"
+353,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?'),"carry_object(coffee, reception)"
+354,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),look_for_item('coffee_machine'),if found: ask_human_for_help('Can you please make me a coffee?'),"if not found: navigate_to(user123), say('I couldn't find a coffee machine, would you like to get one yourself or shall I assist in another way?')"
+355,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),look_for_item('coffee_machine'),if (found) {ask_human_for_help('Can you please make me a coffee?')} else {say('I couldn't find a coffee machine. Would you like me to ask for help from someone?')}
+356,phi4:14b,p-20250211-22-00.txt,2,0.45,navigate_to(kitchen),ask_human_for_help('Can you help me get a coffee?')
+357,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object('coffee', 'reception')"
+358,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you help me find the coffee machine?'),say('I will make a coffee now.')
+359,phi4:14b,p-20250211-22-00.txt,6,0.45,ask('What type of coffee would you like?'),navigate_to('kitchen'),look_for_item('* hasType coffee_machine'),"perform_action('make_coffee', 'coffee_preferences')","carry_object('coffee', 'reception')",handover('coffee')
+360,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?'),"carry_object('cup', 'user123_location')"
+361,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),ask('Is there a coffee machine available?'),if coffee_machine is available: use_coffee_machine(coffee),else: ask_human_for_help('Can you help me make a cup of coffee?')
+362,phi4:14b,p-20250211-22-00.txt,2,0.45,navigate_to(kitchen),"ask_human_for_help('Can you help me make some coffee, please?')"
+363,phi4:14b,p-20250211-22-00.txt,2,0.45,navigate_to(kitchen),ask_human_for_help('Can you help me make a cup of coffee?')
+364,phi4:14b,p-20250211-22-00.txt,2,0.45,navigate_to('kitchen'),ask_human_for_help('Can you please make a coffee for me?')
+365,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),"ask_human_for_help('Can you help me get a coffee, please?')"
+366,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),"ask_human_for_help('Can you get me a coffee, please?')","carry_object('coffee', 'reception')",handover('coffee')
+367,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),"carry_object('coffee', 'reception')"
+368,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')",say('Here is your coffee.')
+369,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?'),"carry_object('coffee', 'reception')"
+370,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee for me?'),"carry_object('coffee', 'reception')"
+371,phi4:14b,p-20250211-22-00.txt,8,0.45,navigate_to(kitchen),look_for_item('* isCoffeeMachine or * hasType Coffee'),if found: prepare_coffee(),else: navigate_to(storage_room),look_for_item('* isCoffeeBeverage or * hasType Coffee'),"if found: carry_object(found_item, 'reception')",navigate_to(user123),handover(found_item)
+372,phi4:14b,p-20250211-22-00.txt,6,0.45,navigate_to(kitchen),look_for_item('coffeemachine'),"if found: navigate_to(coffee_machine_location), ask_human_for_help('Please make me a coffee.')",else: look_for_item('* hasCategory coffee'),"if found: carry_object(found_coffee, 'reception'), handover(found_coffee)",else: say('I couldn't find any coffee. Would you like to go get some yourself?')
+373,phi4:14b,p-20250211-22-00.txt,7,0.45,navigate_to(kitchen),ask('Do you have a specific type or preference for your coffee?'),look_for_item('* isCoffeeMachine'),"carry_object(coffee_machine, kitchen)",operate_coffee_machine(coffee_type_preference),navigate_to(user123),handover(mug_with_coffee)
+374,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),look_for_item('* hasType coffee_maker'),ask_human_for_help('Can you help me make a coffee?')
+375,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask('Do you have any coffee-making equipment here?'),"if affirmative, ask_human_for_help('Can you help me make a cup of coffee for user123?')"
+376,phi4:14b,p-20250211-22-00.txt,2,0.45,say('Let me guide you to the kitchen where you can make your own coffee.'),navigate_to('kitchen')
+377,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),look_for_item('coffee_machine'),"if coffee_machine is found, then use it to make coffee",else ask_human_for_help('Can you help me find the coffee machine?')
+378,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object('coffee', 'reception')"
+379,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for user123?'),navigate_to(user123),say('Here is your coffee.')
+380,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to('kitchen'),look_for_item('* hasType coffeeMachine or * hasType coffee'),"if found, carry_object('coffee', 'reception') else ask_human_for_help('Can you please prepare a coffee for me?')"
+381,phi4:14b,p-20250211-22-00.txt,8,0.45,navigate_to(kitchen),say('I am going to make you a coffee.'),ask_human_for_help('Can you please get me some water and coffee beans?'),ask_human_for_help('Please place the coffee maker on the counter.'),ask_human_for_help('Add water and coffee beans into the coffee maker.'),say('I am starting the coffee maker.'),navigate_to(user123),say('Here is your coffee. Enjoy!')
+382,phi4:14b,p-20250211-22-00.txt,5,0.45,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')",navigate_to(user123),handover('coffee')
+383,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),"ask_human_for_help('Can you help me get a coffee, please?')","carry_object('coffee', 'reception')",handover('coffee')
+384,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),"ask_human_for_help('Can you help me make a cup of coffee, please?')","carry_object('coffee', 'reception')"
+385,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if coffee_machine_found then: make_coffee() else: ask_human_for_help('Can you help me find a way to get some coffee for user123?')
+386,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to('kitchen'),>// Assuming the kitchen might have a coffee machine or supplies needed to make coffee.,look_for_item('* hasType CoffeeMachine'),>// Look specifically for a coffee machine.
+387,phi4:14b,p-20250211-22-00.txt,5,0.45,navigate_to(kitchen),ask('What type of coffee would you like?'),prepare_coffee(coffee_type),"carry_object(cup_of_coffee, reception)",handover(cup_of_coffee)
+388,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),"ask_human_for_help('Can you prepare a coffee for me, please?')","carry_object('coffee', 'reception')",say('Here is your coffee!')
+389,phi4:14b,p-20250211-22-00.txt,5,0.45,navigate_to(kitchen),look_for_item('coffee maker'),if coffee_maker_found: brew_coffee(),"carry_object('coffee', 'reception')",handover('coffee')
+390,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),ask_human_for_help('Can you please make me a coffee?'),"carry_object('coffee', 'reception')",say('Here is your coffee.')
+391,phi4:14b,p-20250211-22-00.txt,6,0.45,"say('What type of coffee would you like? Black, with milk, or any other preference?')",wait_for_response(),navigate_to('kitchen'),make_coffee(response),"carry_object('coffee', 'reception')",handover('coffee')
+392,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+393,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?'),"carry_object('coffee', 'reception')"
+394,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),ask_human_for_help('Could you please make a cup of coffee?'),"carry_object('coffee', 'reception')",handover('coffee')
+395,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),"ask_human_for_help('Can you make me a coffee, please?')","carry_object('coffee', 'reception')"
+396,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')",handover('coffee')
+397,phi4:14b,p-20250211-22-00.txt,4,0.45,navigate_to(kitchen),"ask_human_for_help('Can you please make a coffee for me, user123?')",navigate_to(user123),handover(coffee)
+398,phi4:14b,p-20250211-22-00.txt,2,0.45,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?')
+399,phi4:14b,p-20250211-22-00.txt,5,0.45,navigate_to(kitchen),look_for_item('* hasType coffeeMachine and isAvailable'),ask_human_for_help('Can you please make a cup of coffee for me?'),"carry_object('coffee', 'reception')",handover('coffee')
+400,phi4:14b,p-20250211-22-00.txt,3,0.45,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')"
+401,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),"ask_human_for_help('Can you make me a cup of coffee, please?')",navigate_to(user123),handover(coffee)
+402,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),"carry_object('coffee', 'reception')"
+403,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),ask_human_for_help('Can you please make a cup of coffee?'),navigate_to(reception),handover(coffee)
+404,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')"
+405,phi4:14b,p-20250211-22-00.txt,6,0.5,navigate_to(reception),look_for_item('* hasType CoffeeMachine'),if found: navigate_to(CoffeeMachine),"ask_human_for_help('Can you help me make a coffee, please?')","carry_object(coffee, reception)",handover(coffee)
+406,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee for me?'),navigate_to(reception)
+407,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),look_for_item('coffee_machine'),"if coffee_machine is found, then ask_human_for_help('Can you make me a coffee, please?')",else navigate_to(user123) and say('I couldn't find the coffee machine. Would you like to go get one together?')
+408,phi4:14b,p-20250211-22-00.txt,5,0.5,navigate_to(kitchen),ask_human_for_help('Could you please prepare a coffee for me?'),"carry_object(coffee, reception)",navigate_to(user123),handover(coffee)
+409,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),navigate_to(reception)
+410,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')","say('Here is your coffee, user123')"
+411,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),"ask_human_for_help('Can you get me the coffee machine, please?')",say('I will make your coffee now.'),"carry_object('coffee', 'reception')"
+412,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),ask_human_for_help('Can you please get me the coffee machine?'),ask_human_for_help('Please place a cup in front of the machine.'),say('I will start making your coffee now.')
+413,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee, please?')","carry_object('coffee', 'reception')"
+414,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee for me?'),navigate_to(reception)
+415,phi4:14b,p-20250211-22-00.txt,3,0.5,say('I will go to the kitchen and prepare your coffee.'),navigate_to('kitchen'),ask_human_for_help('Can you please get me some coffee from the storage room?')
+416,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),look_for_item('* hasType coffeeMachine'),if (found coffeeMachine) { ask_human_for_help('Can you help me make a coffee?'); } else { say('I couldn’t find a coffee machine. Would you like to check the storage room instead?'); navigate_to(storage_room); }
+417,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(reception)
+418,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee?'),navigate_to(user123),handover(coffee)
+419,phi4:14b,p-20250211-22-00.txt,5,0.5,look_for_item('* hasType coffeeMachine'),if found then navigate_to(coffeeMachine),ask_human_for_help('Can you please make me a cup of coffee?'),navigate_to(user123),handover(coffee)
+420,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),navigate_to(reception)
+421,phi4:14b,p-20250211-22-00.txt,2,0.5,navigate_to('kitchen'),ask_human_for_help('Is there a coffee machine available?')
+422,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if found: make_coffee() else: ask_human_for_help('Can you help me find a coffee machine?')
+423,phi4:14b,p-20250211-22-00.txt,2,0.5,navigate_to('kitchen'),ask_human_for_help('Can you please make me a coffee?')
+424,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),ask_human_for_help('Can you please make me a coffee?')
+425,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),ask_human_for_help('Can you please prepare a cup of coffee for me?'),navigate_to(user123),handover(coffee)
+426,phi4:14b,p-20250211-22-00.txt,5,0.5,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),"ask_human_for_help('Can you assist me with making coffee, please?')","carry_object(coffee, 'reception')",handover(coffee)
+427,phi4:14b,p-20250211-22-00.txt,2,0.5,navigate_to(kitchen),"ask_human_for_help('Can you help me with making coffee, please?')"
+428,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')",navigate_to(user123)
+429,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Can you assist me with making a coffee?'),"carry_object('coffee', 'reception')"
+430,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),"ask_human_for_help('Can you help me make coffee, please?')","carry_object('coffee', 'reception')"
+431,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(storage_room),look_for_item('* isCoffee'),if found: navigate_to(user123),if found: handover(coffee)
+432,phi4:14b,p-20250211-22-00.txt,5,0.5,navigate_to(kitchen),ask('What type of coffee would you like?'),make_coffee(coffee_type),navigate_to(reception),handover(cup_of_coffee)
+433,phi4:14b,p-20250211-22-00.txt,5,0.5,navigate_to(kitchen),look_for_item('* isCoffeeMachine'),if_found: use_coffee_machine(),"carry_object(coffee, 'reception')",handover(coffee)
+434,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),ask_human_for_help('Can you please prepare a coffee?'),navigate_to(reception),handover(coffee)
+435,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),look_for_item('hasType CoffeeMachine'),ask_human_for_help('Can you help me make a coffee?')
+436,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')",navigate_to(user123),say('Here is your coffee.')
+437,phi4:14b,p-20250211-22-00.txt,5,0.5,navigate_to(kitchen),say('Preparing coffee for user123.'),ask_human_for_help('Can you please get a cup of coffee from the kitchen?'),navigate_to(reception),handover('coffee')
+438,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),"ask_human_for_help('Can you give me a cup of coffee, please?')","carry_object('coffee', 'reception')",handover('coffee')
+439,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask('Do you have any specific preferences for your coffee?'),prepare_coffee()
+440,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?'),"carry_object('coffee', 'reception')"
+441,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Could you please make a coffee?'),navigate_to(reception)
+442,phi4:14b,p-20250211-22-00.txt,2,0.5,navigate_to('kitchen'),ask_human_for_help('Can you please make a coffee for me?')
+443,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),ask('Is there a coffee machine here?'),if yes: make_coffee() and navigate_to(reception),handover(cup_with_coffee) to user123
+444,phi4:14b,p-20250211-22-00.txt,2,0.5,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee?')
+445,phi4:14b,p-20250211-22-00.txt,3,0.5,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee?'),"carry_object(coffee, 'reception')"
+446,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),look_for_item('hasType Coffee'),"if found: carry_object(coffee, reception)",else: ask_human_for_help('Could you please get me some coffee?')
+447,phi4:14b,p-20250211-22-00.txt,5,0.5,navigate_to(kitchen),ask_human_for_help('Can you please make a coffee for me?'),"carry_object('coffee', 'reception')",navigate_to(user123),handover('coffee')
+448,phi4:14b,p-20250211-22-00.txt,2,0.5,navigate_to(kitchen),ask_human_for_help('Could you please make a cup of coffee for me?')
+449,phi4:14b,p-20250211-22-00.txt,2,0.5,navigate_to(kitchen),ask_human_for_help('Can you help me make a coffee for user123?')
+450,phi4:14b,p-20250211-22-00.txt,4,0.5,navigate_to(kitchen),"ask_human_for_help('Can you make a coffee for me, please?')","carry_object('coffee', 'reception')",handover('coffee')

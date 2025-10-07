@@ -1,0 +1,7 @@
+
+string json_data # question, time_range, etc.
+---
+string error_msg
+explainability_msgs/Explanation[] explanations
+---
+string status

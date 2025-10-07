@@ -1,0 +1,2 @@
+skill_ask_human_for_help:
+  launch: "skill_ask_human_for_help skill_ask_human_for_help.launch.py"

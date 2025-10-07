@@ -1,0 +1,15 @@
+/audio_capture:
+  ros__parameters:
+    device: default # tell alsa to use pulseaudio default source
+    format: wave
+    bitrate: 128
+  remappings:
+    audio: audio_in/raw
+    audio_info: audio_in/info
+    audio_stamped: audio_in/raw_stamped
+
+/volume:
+  ros__parameters:
+    capture: 80
+    playback: 55
+    capture_use_respeaker: false

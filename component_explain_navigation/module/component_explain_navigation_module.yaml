@@ -1,0 +1,2 @@
+component_explain_navigation:
+  launch: "component_explain_navigation component_explain_navigation.launch.py"

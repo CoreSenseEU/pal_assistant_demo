@@ -1,0 +1,267 @@
+buildings:
+  - name: demo_building
+    timezone: Europe/Madrid
+    is_active: true
+    is_enabled: true
+    properties:
+      []
+building_anchors:
+  - name: simple_building_anchor
+    type: 0
+    is_active: false
+    is_enabled: true
+    parent_key: demo_building
+    transform:
+      translation:
+        x: 0
+        y: 0
+        z: 0
+      rotation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+floors:
+  - name: test_map_floor
+    level: 1
+    is_active: false
+    is_enabled: true
+    parent_key: demo_building
+    anchor_key: demo_building/simple_building_anchor
+    transform:
+      translation:
+        x: 0
+        y: 0
+        z: 0
+      rotation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+floor_anchors:
+  - name: test_floor_anchor
+    type: 0
+    is_active: false
+    is_enabled: true
+    parent_key: demo_building/test_map_floor
+    transform:
+      translation:
+        x: 0
+        y: 0
+        z: 0
+      rotation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+waypoints:
+  []
+waypoint_lists:
+  []
+lanes:
+  []
+zones:
+  - name: vo_table
+    type: 1
+    is_active: false
+    is_enabled: true
+    parent_key: demo_building/test_map_floor
+    vertexes:
+      - transform:
+          translation:
+            x: 3.5570793151855469
+            y: 6.638399600982666
+            z: 0.10000000149011612
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 4.1008272171020508
+            y: 0.78954637050628662
+            z: 0.10000000149011612
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: -4.2487516403198242
+            y: 0.15932798385620117
+            z: 0.10000000149011612
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: -6.433445930480957
+            y: 5.0626401901245117
+            z: 0.10000000149011612
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+  - name: kitchen
+    type: 0
+    is_active: false
+    is_enabled: true
+    parent_key: demo_building/test_map_floor
+    vertexes:
+      - transform:
+          translation:
+            x: 13.77222728729248
+            y: -2.1581125259399414
+            z: 0.099998094141483307
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 13.512531280517578
+            y: -3.7009825706481934
+            z: 0.099998094141483307
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 10.585292816162109
+            y: -4.402684211730957
+            z: 0.10000000149011612
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 11.243968963623047
+            y: -2.1727602481842041
+            z: 0.099998094141483307
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+  - name: living_room
+    type: 0
+    is_active: false
+    is_enabled: true
+    parent_key: demo_building/test_map_floor
+    vertexes:
+      - transform:
+          translation:
+            x: 7.6750936508178711
+            y: 0.20116734504699707
+            z: 0.10000000149011612
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 8.9564743041992188
+            y: 1.76239013671875
+            z: 0.099998094141483307
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 10.264151573181152
+            y: 1.3443179130554199
+            z: 0.099998094141483307
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 10.692937850952148
+            y: -0.29586362838745117
+            z: 0.099998094141483307
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+  - name: dining_room
+    type: 0
+    is_active: false
+    is_enabled: true
+    parent_key: demo_building/test_map_floor
+    vertexes:
+      - transform:
+          translation:
+            x: 4.6375627517700195
+            y: -2.6422183513641357
+            z: 0.10000000149011612
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 4.4508953094482422
+            y: -0.42027580738067627
+            z: 0.099998094141483307
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 6.4195828437805176
+            y: -1.0023880004882812
+            z: 0.10000000149011612
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - transform:
+          translation:
+            x: 5.8978652954101562
+            y: -2.7681815624237061
+            z: 0.10000000149011612
+          rotation:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+maps:
+  - name: demo_map
+    filename: /home/pal/llm_demo/test_map.yaml
+    frame_id: map
+    is_active: false
+    is_enabled: true
+    type: 1
+    namespace: ""
+    parent_key: demo_building/test_map_floor
+    anchor_key: demo_building/test_map_floor/test_floor_anchor
+    transform:
+      translation:
+        x: 0
+        y: 0
+        z: 0
+      rotation:
+        x: 0
+        y: 0
+        z: 0
+        w: 1

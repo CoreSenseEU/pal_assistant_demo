@@ -1,0 +1,2 @@
+assistant_mission:
+  launch: "assistant_mission assistant_mission.launch.py"
